@@ -1,0 +1,119 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Voiceflowハンズオン: アカウントのセットアップ手順</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="dist"
+                  title="Voiceflowハンズオン: アカウントのセットアップ手順"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="概要" duration="0">
+        <h2 is-upgraded>はじめに</h2>
+<p>本資料は、VoiceflowでAlexaスキルを作成するための事前準備として、アカウントの作成等の手順を記載しています。</p>
+<h2 is-upgraded>注意</h2>
+<aside class="warning"><p>本手順書は2019年11月21日時点のものですが、Voiceflowの開発はかなり活発なので、本手順書通りに進めてもうまくいかない場合や画面が変更されている場合があります。ご容赦ください。（必要な場合は補足します）</p>
+</aside>
+<aside class="special"><p>不具合やお気づきの点があれば、<a href="https://github.com/kun432/voiceflow-handson-20190318/issues" target="_blank">https://github.com/kun432/voiceflow-handson-20190318/issues</a>でissue立てていただければと思います。PRも歓迎！</p>
+</aside>
+<aside class="special"><p>不具合やお気づきの点があれば、kun432.8d1w@gmail.comまで。</p>
+</aside>
+<h2 is-upgraded>更新履歴</h2>
+<ul>
+<li>2019/11/21    公開</li>
+</ul>
+<p>ではNextをクリックしてください</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Amazon.co.jpアカウント/Amazon開発者アカウントの準備" duration="0">
+        <p>VoiceflowでAlexaスキル開発を行うには、以下の3つのアカウントが必要になります。</p>
+<ol type="1">
+<li>Amazon.co.jpアカウント</li>
+<li>Amazon開発者アカウント</li>
+<li>Voiceflowアカウント</li>
+</ol>
+<p>1と２については本資料では説明しませんが、以下の手順をご確認の上、ご準備ください。なお、非常にハマりやすいポイントが多々ありますので、ご注意ください。</p>
+<ul>
+<li>失敗しないAlexa開発者アカウントの作り方<br><a href="https://dev.classmethod.jp/voice-assistant/how-to-safety-create-alexa-developers-account/" target="_blank">https://dev.classmethod.jp/voice-assistant/how-to-safety-create-alexa-developers-account/</a></li>
+</ul>
+<p>注意すべき点を以下に記載します。</p>
+<h2 is-upgraded>1. Amazon.co.jpアカウント</h2>
+<p>Amazon.co.jpで普段のお買い物等でお使いいただいているアカウントがあればそれで結構です。Echoデバイスをすでにお持ちの方はデバイスに紐付いたアカウントであれば実機でも確認ができます（今日のハンズオンではEchoデバイスは不要です。）</p>
+<p>もしお持ちでない場合は、上記手順を参考にアカウントを作成してください。</p>
+<aside class="warning"><p>&#34;amazon.com&#34;アカウントではなく&#34;amazon.co.jp&#34;アカウントであることを確認してください。</p>
+</aside>
+<aside class="warning"><p>&#34;amazon.com&#34;アカウントと&#34;amazon.co.jp&#34;アカウントの両方をお持ちで、メールアドレス・パスワードが同じになっている場合はハマります。どちらかのパスワードを変えてください。詳しくは以下をご覧ください。<br><br>Amazon.comアカウントが優先してAlexaアプリに入れない問題の解決法<br><a href="https://dev.classmethod.jp/voice-assistant/solution-of-a-problem-amazon-com-account-conflict/" target="_blank">https://dev.classmethod.jp/voice-assistant/solution-of-a-problem-amazon-com-account-conflict/</a></p>
+</aside>
+<h2 is-upgraded>2. Amazon開発者アカウント</h2>
+<p>多分ここがまだの方という方が多いと思います。Amazon.co.jpアカウントを作成した、もしくは既にお持ちの場合は、最初にご紹介した<a href="https://dev.classmethod.jp/voice-assistant/how-to-safety-create-alexa-developers-account/" target="_blank">「失敗しないAlexa開発者アカウントの作り方」</a>の&#34;Amazon Developerアカウントの登録&#34;を参考に開発者登録を行ってください。</p>
+<aside class="warning"><p>開発者「登録」が必要になります、といっても「新規作成」する必要はありません。上記のサイトにあるようにお持ちのAmazon.co.jpアカウントで「ログイン」して必要事項を入力するだけです。</p>
+</aside>
+<aside class="warning"><p>ここで新規作成しないように注意してください！ハマります。ここから新規作成を行った場合は以下を参考に解決してください。<br><br>Alexa 開発者アカウントのハマりどころ<br><a href="https://qiita.com/toshimin/items/3355a996008216dff741" target="_blank">https://qiita.com/toshimin/items/3355a996008216dff741</a></p>
+</aside>
+<p>これでAmazon側のアカウントの準備は完了です。続けて、Voiceflowアカウントを作成しましょう。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Voiceflowアカウントの作成とログイン" duration="0">
+        <h2 is-upgraded>Voiceflowアカウントの作成</h2>
+<p><a href="https://voiceflow.com/" target="_blank">https://voiceflow.com/</a>にアクセスします。Voiceflowアカウントを持っていない方は、&#34;Sign up&#34;をクリックしてアカウントを作成しましょう。<br>※すでにアカウントを持っている方は、これ以降の作業は不要です。&#34;Sign in&#34;をクリックしてログインし、次の章に進みましょう。</p>
+<p class="image-container"><img alt="03-001" src="img/f37736aac8d2b3d8.png"></p>
+<p>名前、メールアドレス、パスワードを入力して、&#34;Create Account&#34;をクリックします。メールアドレスはAmazon.co.jpアカウントと同じにしておくとわかりやすいかと思います。</p>
+<p class="image-container"><img alt="03-002" src="img/f875d9877967ffe.png"></p>
+<p>最初にかんたんなアンケートがありますので、順に答えていきましょう。なお、どれを選択したとしてもVoiceflowの利用に影響はありませんので安心してください。&#34;Continue&#34;をクリックして進めます。</p>
+<p class="image-container"><img alt="03-003" src="img/7346840a863c8cb5.png"></p>
+<p>Voceflowを使う人（個人か、チームか）を聞いてくるので、適当に選んでください。選んだら、&#34;Continue&#34;をクリックします。</p>
+<p class="image-container"><img alt="03-004" src="img/39857e8bbc35f210.png"></p>
+<p>Voiceflowをどういうふうに使うのか（デザインやプロトタイピング、開発やリリース）を聞いてくるので、適当に選んでください。選んだら、&#34;Continue&#34;をクリックします。</p>
+<p class="image-container"><img alt="03-005" src="img/13a1bd938422a497.png"></p>
+<p>プログラミング経験があるか？を聞いてくるので、適当に選んでください。（経験なし、少しだけ経験あり、経験豊富）。選んだら、&#34;Complete&#34;をクリックします。</p>
+<p class="image-container"><img alt="03-006" src="img/73c39875b7106c32.png"></p>
+<p>以下の画面が出てきたらログイン完了です！ちなみに左上のアイコンの人がVoiceflowのCEOであるBradenさんです。右上の&#34;☓&#34;をクリックして閉じます。</p>
+<p class="image-container"><img alt="03-007" src="img/d388ea76233ac9ab.png"></p>
+<p>これがVoiceflowの操作画面になります。画面の説明についてはハンズオンの中で行います。ちなみにアカウント作成の直後は&#34;My First Project&#34; という最初のプロジェクトが開いた状態になっていますが、これは使いません。左上の&#34;＜&#34;をクリックします。</p>
+<p class="image-container"><img alt="03-008" src="img/8fe763288d477a57.png"></p>
+<p>プロジェクトの一覧画面が表示されます。Voiceflowでは、AlexaスキルやGoogle Homeアクションを「プロジェクト」という単位で管理します。右の列にあるのがさっき開いていた、アカウント作成と同時に最初に自動作成される「My First Project」ですね。左の列にはサンプルのプロジェクトが並んでいます。</p>
+<p>ハンズオンでは、この一覧画面でプロジェクトの新規作成から行いますので、これらのプロジェクトはすべて使用しません。プロジェクトを作成するとこの画面に一覧表示される、と思ってもらえればよいです。</p>
+<p class="image-container"><img alt="03-009" src="img/93de0694ce5ab3b2.png"></p>
+<aside class="special"><p>元々用意されているプロジェクトは、不要であれば削除してもかまいません。特に&#34;My First Project&#34;については、このあとプロジェクトの新規作成を行いますので、削除しても問題ないです。</p>
+</aside>
+<aside class="special"><p>サンプルプロジェクトは、スキルの作り方の参考になると思いますので、興味があれば中身を見てみてください。</p>
+</aside>
+<aside class="warning"><p>削除したプロジェクトは復旧できませんので、ご注意ください。</p>
+</aside>
+<p>これで準備が整いました。ではハンズオン当日をお楽しみに！</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>
