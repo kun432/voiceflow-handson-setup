@@ -102,8 +102,10 @@ Voiceflowをどういうふうに使うのかを聞いてくるので、適当�
 
 - "Choose your role"
   - あなたの立場です。開発者やデザイナーなどから選んでください。
+
 - "What Channels are you connecting for?"
   - Voiceflowで作りたいプラットフォームです。AlexaやGoogleなどから選んでください。
+
 - "How big is your team?"
   - チームメンバーの数を入力します。個人であれば"Only Me"でよいでしょう。
 
