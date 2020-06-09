@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
   <meta name="theme-color" content="#4F7DC9">
   <meta charset="UTF-8">
-  <title>Voiceflowハンズオン: Voiceflowアカウントの作成</title>
+  <title>Voiceflow日本語チュートリアル 〜Voiceflowアカウントの作成〜</title>
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
@@ -23,16 +23,16 @@
   <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
   <google-codelab codelab-gaid=""
                   id="dist"
-                  title="Voiceflowハンズオン: Voiceflowアカウントの作成"
+                  title="Voiceflow日本語チュートリアル 〜Voiceflowアカウントの作成〜"
                   environment="web"
                   feedback-link="">
     
       <google-codelab-step label="概要" duration="0">
-        <p class="image-container"><img alt="03-000" src="img/5cda02809bfc1704.png"></p>
-<h2 is-upgraded>はじめに</h2>
-<p>本資料は、VoiceflowでAlexaスキルを作成するための事前準備として、アカウント作成の手順を記載しています。</p>
+        <p class="image-container"><img alt="logo" src="img/20a249bbbba4f1fe.jpg"></p>
+<p>Voiceflowを使ったノンコーディングではじめるAlexaスキル開発の日本語チュートリアルシリーズです。</p>
+<p>第0回は「Voiceflowアカウントの作成」です。VoiceflowでAlexaスキル開発を始めるために必要なアカウント作成の手順について説明します。</p>
 <h2 is-upgraded>注意</h2>
-<aside class="warning"><p>本手順書は2020年4月22日時点のものですが、Voiceflowの開発はかなり活発なので、本手順書通りに進めてもうまくいかない場合や画面が変更されている場合があります。ご容赦ください。（必要な場合は補足します）</p>
+<aside class="warning"><p>本手順書は2020年6月9日時点のものですが、Voiceflowの開発はかなり活発なので、本手順書通りに進めてもうまくいかない場合や画面が変更されている場合があります。ご容赦ください。（必要な場合は補足します）</p>
 </aside>
 <aside class="special"><p>不具合やお気づきの点があれば、<a href="https://github.com/kun432/voiceflow-handson-setup/issues" target="_blank">https://github.com/kun432/voiceflow-handson-setup/issues</a>に記載してください。</p>
 </aside>
@@ -40,6 +40,7 @@
 <ul>
 <li>2019/11/21    公開</li>
 <li>2020/04/22   最新化</li>
+<li>2020/06/09   最新化</li>
 </ul>
 <p>ではNextをクリックしてください</p>
 
@@ -84,26 +85,40 @@
 <aside class="special"><p>GoogleアカウントやFacebookアカウントでのアカウント作成も可能です。</p>
 </aside>
 <p class="image-container"><img alt="03-002" src="img/f875d9877967ffe.png"></p>
-<p>最初にかんたんなアンケートがありますので、順に答えていきましょう。なお、どれを選択したとしてもVoiceflowの利用に影響はありませんので安心してください。&#34;Continue&#34;をクリックして進めます。</p>
-<p class="image-container"><img alt="03-003" src="img/7346840a863c8cb5.png"></p>
-<p>Voceflowを使う人（個人か、チームか）を聞いてくるので、適当に選んでください。選んだら、&#34;Continue&#34;をクリックします。</p>
-<p class="image-container"><img alt="03-004" src="img/39857e8bbc35f210.png"></p>
-<p>Voiceflowをどういうふうに使うのか（デザインやプロトタイピング、開発やリリース）を聞いてくるので、適当に選んでください。選んだら、&#34;Continue&#34;をクリックします。</p>
-<p class="image-container"><img alt="03-005" src="img/13a1bd938422a497.png"></p>
-<p>プログラミング経験があるか？を聞いてくるので、適当に選んでください。（経験なし、少しだけ経験あり、経験豊富）。選んだら、&#34;Complete&#34;をクリックします。</p>
-<p class="image-container"><img alt="03-006" src="img/73c39875b7106c32.png"></p>
-<p>以下の画面が出てきたらログイン完了です！ちなみに左上のアイコンの人がVoiceflowのCEOであるBradenさんです。右上の&#34;☓&#34;をクリックして閉じます。</p>
-<p class="image-container"><img alt="03-007" src="img/7a11c164cb2c5468.jpg"></p>
+<p>最初にかんたんなアンケートがありますので、順に答えていきましょう。なお、<strong>どれを選択したとしてもVoiceflowの利用に基本的に影響はありません</strong>ので安心してください。&#34;Get Started&#34;をクリックして進めます。</p>
+<p class="image-container"><img src="img/364e7367c59be382.png"></p>
+<p>Voiceflowをどういうふうに使うのかを聞いてくるので、適当に選んでください。選んだら、&#34;Continue&#34;をクリックします。</p>
+<ul>
+<li>&#34;Choose your role&#34;<br><br><ul>
+<li>あなたの立場です。開発者やデザイナーなどから選んでください。</li>
+</ul>
+</li>
+<li>&#34;What Channels are you connecting for?&#34;<br><br><ul>
+<li>Voiceflowで作りたいプラットフォームです。AlexaやGoogleなどから選んでください。</li>
+</ul>
+</li>
+<li>&#34;How big is your team?&#34;<br><br><ul>
+<li>チームメンバーの数を入力します。個人であれば&#34;Only Me&#34;でよいでしょう。</li>
+</ul>
+</li>
+</ul>
+<p class="image-container"><img src="img/177b7716ecfd3af4.png"></p>
+<p>ワークスペースの名前です。あとから変更もできますのでなんでもよいです。個人であれば&#34;Personal&#34;と入力すればよいでしょう。&#34;Continue&#34;をクリックします。</p>
+<p class="image-container"><img src="img/feb0c21304c3a03d.png"></p>
+<p>コラボレーション機能を使って共同でスキルを作ることもできます。ここで一緒にスキル開発を行いたい人のメールアドレスを入力すると招待されます。あとから追加もできますので、&#34;Skip for now&#34;をクリックします。</p>
+<p class="image-container"><img src="img/317a551444ff5882.png"></p>
+<p>この画面が表示されればアカウント作成は完了です！&#34;Show me around&#34;をクリックするとかんたんに説明してくれるようですが、ここでは&#34;No Thanks&#34;をクリックします。</p>
+<p class="image-container"><img src="img/52f907ad61e0e7e.png"></p>
 <p>これがVoiceflowの操作画面になります。画面の説明についてはこのあとのハンズオンの中で行います。ちなみにアカウント作成の直後は&#34;My First Project&#34; という最初のプロジェクトが開いた状態になっていますが、これは使いません。左上の&#34;＜&#34;をクリックします。</p>
-<p class="image-container"><img alt="03-008" src="img/22a84be53ea3f29f.jpg"></p>
+<p class="image-container"><img src="img/ea66fb31cd06241e.png"></p>
 <p>プロジェクトの一覧画面が表示されます。Voiceflowでは、Alexaスキルを「プロジェクト」という単位で管理します。右の列にあるのがさきほど開いていた、アカウント作成時に自動作成される「My First Project」ですね。</p>
-<p>ハンズオンでは、この一覧画面でプロジェクトの新規作成から行いますので、このプロジェクトは使用しません。プロジェクトを作成するとこの画面に一覧表示される、ということを覚えておいていただければ結構です。</p>
-<p class="image-container"><img alt="03-009" src="img/b06b6cf31d9cae67.jpg"></p>
+<p>このチュートリアルシリーズでは、この一覧画面でプロジェクトの新規作成から行いますので、このプロジェクトは使用しません。プロジェクトを作成するとこの画面に一覧表示される、ということを覚えておいていただければ結構です。</p>
+<p class="image-container"><img src="img/57745951d15acde4.png"></p>
 <aside class="special"><p>元々用意されているプロジェクトは削除してもかまいません。</p>
 </aside>
 <aside class="warning"><p>削除したプロジェクトは復旧できませんので、ご注意ください。</p>
 </aside>
-<p>これで準備が整いました。ではハンズオンをお楽しみに！</p>
+<p>これで準備が整いました。ではチュートリアルをお楽しみに！</p>
 
 
       </google-codelab-step>
